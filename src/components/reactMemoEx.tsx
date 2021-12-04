@@ -15,4 +15,4 @@ const ReactMemoEx: React.FC = () => {
     </>
   );
 };
-export default ReactMemoEx;
+export default React.memo(ReactMemoEx);

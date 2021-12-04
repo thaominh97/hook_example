@@ -1,1 +1,2 @@
-export * from './useRefEx';
+export * from "./useRefEx";
+export * from "./reactMemoEx";
