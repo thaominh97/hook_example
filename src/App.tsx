@@ -4,6 +4,8 @@ import { UseRefEx } from "./components/index";
 import ReactMemoEx from "./components/reactMemoEx";
 import UseCallbackEx from "./components/useCallbackEx";
 import UseMemoEx from "./components/useMemoEx";
+import UseReducerEx from "./components/useReducerEx";
+
 export default function App() {
   const [count, setCount] = useState(0);
   const handleIncrease = useCallback(() => {
@@ -19,6 +21,7 @@ export default function App() {
       <UseCallbackEx onClick={handleIncrease} />
       <p>{count}</p>
       <UseMemoEx />
+      <UseReducerEx />
     </div>
   );
 }
