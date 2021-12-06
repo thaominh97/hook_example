@@ -5,7 +5,7 @@ interface PropsType {
 }
 
 const UseCallbackEx: React.FC<PropsType> = ({ onClick }) => {
-  console.log("re-render");
+  // console.log("re-render");
 
   return (
     <>
