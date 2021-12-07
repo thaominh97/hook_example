@@ -1,9 +1,9 @@
 import React, { useReducer, useRef } from "react";
 import { setJob, addJob, removeJob } from "./actions";
 import { reducerJobs, initJobState } from "./reducerJobs";
-
+import { logger } from "./logger";
 const JobsList = () => {
-  const [jobState, dispatch] = useReducer(reducerJobs, initJobState);
+  const [jobState, dispatch] = useReducer(logger(reducerJobs), initJobState);
   const { job, jobs } = jobState;
 
   const inputRef = useRef<HTMLInputElement>(null);
