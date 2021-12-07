@@ -2,26 +2,14 @@ import React from "react";
 
 interface ChildrensType {
   count: number;
-  job: string;
-  jobs: string[];
-  ref: any;
   onCountUp: any;
   onCountDown: any;
-  onChange: any;
-  onClick: any;
-  onRemoveJob: any;
 }
 
 const UseReducerEx: React.FC<ChildrensType> = ({
   count,
-  job,
-  jobs,
-  ref,
   onCountDown,
-  onCountUp,
-  onChange,
-  onClick,
-  onRemoveJob
+  onCountUp
 }) => {
   return (
     <>
@@ -46,29 +34,6 @@ const UseReducerEx: React.FC<ChildrensType> = ({
       </p>
       <button onClick={onCountUp}>Up</button>
       <button onClick={onCountDown}>Down</button>
-      <br />
-      <p>Ex2:</p>
-      <p>Jobs list</p>
-      <br />
-      <input
-        placeholder="Enter your jobs..."
-        onChange={onChange}
-        value={job}
-        ref={ref}
-      />
-      <button onClick={onClick}>Add</button>
-      <br />
-      <ul>
-        {jobs.map((job, index) => {
-          const onRemove = onRemoveJob(job);
-          return (
-            <li key={index} onClick={onRemove}>
-              {job}
-            </li>
-          );
-        })}
-      </ul>
-      <br />
     </>
   );
 };
