@@ -6,6 +6,7 @@ import UseCallbackEx from "./components/useCallbackEx";
 import UseMemoEx from "./components/useMemoEx";
 import UseReducerEx from "./components/useReducerEx";
 import JobsList from "./components/JobList";
+import UseImperativeHandleEx from "./components/useImperativeHandle";
 const initState = 0;
 
 // ex 1 of useReducer
@@ -41,7 +42,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>M.T example</h1>
-      <p>Ex: useRef, React.memo, useMemo, useCallback, useReducer</p>
+      <p>Ex: useRef, React.memo, useMemo, useCallback, useReducer,...</p>
       <ReactMemoEx />
       <UseRefEx />
       <UseCallbackEx onClick={handleIncrease} />
@@ -53,6 +54,7 @@ export default function App() {
         onCountUp={handleCountUp}
       />
       <JobsList />
+      <UseImperativeHandleEx />
     </div>
   );
 }
