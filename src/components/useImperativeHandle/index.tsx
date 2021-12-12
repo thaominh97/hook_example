@@ -3,6 +3,8 @@ import Video from "./Video";
 
 const UseImperativeHandleEx = () => {
   const videoRef = useRef<HTMLVideoElement>();
+
+  // console.log(videoRef.current)
   const handlePlay = () => {
     videoRef?.current?.play();
   };
