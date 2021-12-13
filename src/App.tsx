@@ -6,6 +6,7 @@ import UseCallbackEx from "./components/useCallbackEx";
 import UseMemoEx from "./components/useMemoEx";
 import UseReducerEx from "./components/useReducerEx";
 import JobsList from "./components/JobList";
+import ContextEx from "./components/context";
 import UseImperativeHandleEx from "./components/useImperativeHandle";
 const initState = 0;
 
@@ -54,6 +55,7 @@ export default function App() {
         onCountUp={handleCountUp}
       />
       <JobsList />
+      <ContextEx />
       <UseImperativeHandleEx />
     </div>
   );

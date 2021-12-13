@@ -13,7 +13,7 @@ const UseImperativeHandleEx = () => {
   };
   return (
     <>
-      <h3>6. useImperativeHandle</h3>
+      <h3>7. useImperativeHandle</h3>
       <Video ref={videoRef} />
       <br />
       <button onClick={handlePlay}>Play</button>
